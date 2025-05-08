@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/app.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <script src="../scripts/app.js" defer></script>
+    <title>PastaReady+ | App</title>
+</head>
+<body>
+
+    <header>
+
+        <div class="header-container">
+            <div class="logo-container">
+                <!--<img src="../assets/logo.png" alt="PastaReady+ Logo" class="logo">-->
+                <h1 class="logo">Pasta<p class="logo-ready">Ready</p><p class="logo-plus">+</p></h1>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="../pages/index.html">Home</a></li>
+                    <li><a href="../pages/about.html">About</a></li>
+                    <li><a class="active" href="../pages/app.html">App</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <section id="app-section" class="app-section">
+
+        <div class="timer-container">
+        <h2>Select Your Pasta Type</h2>
+        <select id="pasta-select">
+            <option value="">-- Choose Pasta --</option>
+            <option value="480">Spaghetti (8 min)</option>
+            <option value="600">Penne (10 min)</option>
+            <option value="420">Fusilli (7 min)</option>
+            <option value="540">Linguine (9 min)</option>
+            <option value="300">Fresh Pasta (5 min)</option>
+            <option value="10">TEST (10 Seconds)</option>
+        </select>
+
+        <div class="timer-display" id="timer-display">00:00</div>
+
+        <div class="timer-controls">
+            <button onclick="startTimer()">Start</button>
+            <button id="pause-btn" onclick="pauseTimer()">Pause</button>
+            <button onclick="resetTimer()">Reset</button>
+        </div>
+
+        <div id="pasta-ready-animation" class="hidden">
+            🍝 Pasta is Ready! 🍝
+        </div>
+
+        <audio id="alarm-sound" src="../assets/alarm.mp3" preload="auto"></audio>
+        </div>
+
+    </section>
+
+    <footer>
+
+        <div class="footer-container">
+            <p>&copy; 2025 PastaReady+. All rights reserved.</p>
+            <nav class="footer-socials">
+                <ul>
+                    <li><a href="https://www.facebook.com/PastaReadyPlus" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/PastaReadyPlus" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.twitter.com/PastaReadyPlus" target="_blank">X</a></li>
+                </ul>
+            </nav>
+
+    </footer>
+    
+</body>
+</html>

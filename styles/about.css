@@ -1,0 +1,78 @@
+/* ABOUT PAGE STYLES */
+
+.about-section,
+.team-section,
+.contact-section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-section h1,
+.team-section h2,
+.contact-section h2,
+.about-section h2 {
+    font-size: 2.5rem;
+    color: #d35400;
+    margin-bottom: 1rem;
+}
+
+.about-content p,
+.team-member p,
+.contact-container p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+.about-content h2 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    color: #f39c12;
+}
+
+/* TEAM SECTION */
+.team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-member {
+    margin-top: 2rem;
+    max-width: 300px;
+    background-color: #1e1e1e;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.team-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid #d35400;
+}
+
+.team-member h3 {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.team-member p {
+    color: #aaaaaa;
+}
+
+/* CONTACT SECTION */
+.contact-container a {
+    color: #d35400;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-container a:hover {
+    text-decoration: underline;
+}
